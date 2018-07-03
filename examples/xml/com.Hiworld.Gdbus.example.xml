@@ -1,0 +1,23 @@
+<node>
+  <interface name="com.Hiworld.Gdbus.Example">
+
+    <signal name="MySignal1">
+      <arg name="Value" type="s"/>
+    </signal>
+
+    <signal name="MySignal2">
+      <arg name="Value" type="(is)"/>
+    </signal>
+
+    <method name="MyMethod1">
+      <arg name="InArg"  direction="in"  type="s"/>
+      <arg name="OutArg" direction="out" type="s"/>
+    </method>
+
+    <method name="MyMethod2">
+      <arg name="InArg"  direction="in"  type="(ii)"/>
+      <arg name="OutArg" direction="out" type="(si)"/>
+    </method>
+
+  </interface>
+</node>
